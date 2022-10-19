@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 8bbf8b7b8b5f1144ba263c0e541f0452
 ModelImporter:
-  serializedVersion: 19301
+  serializedVersion: 21300
   internalIDToNameTable: []
   externalObjects:
   - first:
@@ -29,6 +29,7 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -58,21 +59,27 @@ ModelImporter:
     importBlendShapes: 0
     importCameras: 0
     importLights: 0
+    nodeNameCollisionStrategy: 0
     fileIdsGeneration: 2
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
     skinWeightsMode: 0
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
+    optimizeBones: 1
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
@@ -518,61 +525,6 @@ ModelImporter:
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: SkeletonWarrior
-      parentName: SkeletonWarriorUnity(Clone)
-      position: {x: -0, y: 0.91106397, z: 0.020485446}
-      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Weapon
-      parentName: SkeletonWarrior
-      position: {x: -0, y: -0.015131788, z: -0.91106397}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: SWShield
-      parentName: Weapon
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: SWSword
-      parentName: Weapon
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: SWSkull
-      parentName: SkeletonWarrior
-      position: {x: -0, y: 0.2017383, z: -0.91106397}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: SWChest
-      parentName: SkeletonWarrior
-      position: {x: -0, y: 0.2017383, z: -0.91106397}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: SWArmL
-      parentName: SkeletonWarrior
-      position: {x: -0, y: 0.2017383, z: -0.91106397}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: SWArmR
-      parentName: SkeletonWarrior
-      position: {x: -0, y: 0.2017383, z: -0.91106397}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: SWLegL
-      parentName: SkeletonWarrior
-      position: {x: -0, y: 0.2017383, z: -0.91106397}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: SWLegR
-      parentName: SkeletonWarrior
-      position: {x: -0, y: 0.2017383, z: -0.91106397}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: SWPelvis
-      parentName: SkeletonWarrior
-      position: {x: -0, y: 0.2017383, z: -0.91106397}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
     - name: root
       parentName: SkeletonWarriorUnity(Clone)
       position: {x: -0, y: 0, z: 0}
@@ -598,21 +550,6 @@ ModelImporter:
       position: {x: -0.13407329, y: 0.004204774, z: -5.6049127e-15}
       rotation: {x: 0, y: -0, z: -0.0070904847, w: 0.9999749}
       scale: {x: 1, y: 1, z: 1}
-    - name: neck_01
-      parentName: spine_03
-      position: {x: -0.16558783, y: -0.0035531756, z: -5.9659744e-10}
-      rotation: {x: 3.5627486e-17, y: -1.2767832e-16, z: 0.20371053, w: 0.97903115}
-      scale: {x: 1, y: 1, z: 1}
-    - name: head
-      parentName: neck_01
-      position: {x: -0.09283613, y: 0.0036415686, z: 4.781569e-18}
-      rotation: {x: 2.6144228e-17, y: -1.2653212e-16, z: -0.1335421, w: 0.99104315}
-      scale: {x: 1, y: 1, z: 1}
-    - name: jaw
-      parentName: head
-      position: {x: -0.01665851, y: -0.018075801, z: 5.6500484e-19}
-      rotation: {x: 4.2807424e-17, y: -1.2190744e-16, z: 5.2185436e-33, w: 1}
-      scale: {x: 1, y: 1, z: 1}
     - name: clavicle_l
       parentName: spine_03
       position: {x: -0.09332677, y: -0.04382631, z: -0.052196562}
@@ -620,13 +557,8 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: upperarm_l
       parentName: clavicle_l
-      position: {x: -0.17203586, y: 1.7763568e-17, z: -2.842171e-16}
-      rotation: {x: 0.071282126, y: 0.08478785, z: 0.12552185, w: 0.9858876}
-      scale: {x: 1, y: 1, z: 1}
-    - name: upperarm_twist_01_l
-      parentName: upperarm_l
-      position: {x: -0.005, y: -3.5527136e-17, z: 0}
-      rotation: {x: -1.5959456e-16, y: 8.326673e-17, z: -5.551115e-17, w: 1}
+      position: {x: -0.17194846, y: 0.000031352043, z: 0.00006392598}
+      rotation: {x: 0.06870047, y: 0.10492842, z: 0.1269535, w: 0.98394775}
       scale: {x: 1, y: 1, z: 1}
     - name: lowerarm_l
       parentName: upperarm_l
@@ -637,16 +569,6 @@ ModelImporter:
       parentName: lowerarm_l
       position: {x: -0.28421926, y: 0, z: 0}
       rotation: {x: -0.60435134, y: 0.05645873, z: 0.048055787, w: 0.79326075}
-      scale: {x: 1, y: 1, z: 1}
-    - name: weapon_l
-      parentName: hand_l
-      position: {x: -0.06706486, y: 0.02999401, z: 0.009469279}
-      rotation: {x: 0.54855716, y: 0.5017045, z: 0.32023492, w: 0.5872199}
-      scale: {x: 1, y: 1, z: 1}
-    - name: shield
-      parentName: weapon_l
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0.9987632, y: -2.6916786e-18, z: 0.049719807, w: 6.113904e-17}
       scale: {x: 1, y: 1, z: 1}
     - name: index_01_l
       parentName: hand_l
@@ -681,7 +603,7 @@ ModelImporter:
     - name: pinky_01_l
       parentName: hand_l
       position: {x: -0.07580046, y: 0.02656699, z: 0.044715352}
-      rotation: {x: -0.14282887, y: 0.07932715, z: -0.12772582, w: 0.9782603}
+      rotation: {x: -0.14282888, y: 0.07932716, z: -0.12772584, w: 0.97826034}
       scale: {x: 1, y: 1, z: 1}
     - name: pinky_02_l
       parentName: pinky_01_l
@@ -711,7 +633,7 @@ ModelImporter:
     - name: thumb_01_l
       parentName: hand_l
       position: {x: -0.028191255, y: 0.0087433355, z: -0.02326332}
-      rotation: {x: 0.5940554, y: -0.2780177, z: 0.19574973, w: 0.72903126}
+      rotation: {x: 0.59405535, y: -0.27801767, z: 0.1957497, w: 0.7290312}
       scale: {x: 1, y: 1, z: 1}
     - name: thumb_02_l
       parentName: thumb_01_l
@@ -723,10 +645,25 @@ ModelImporter:
       position: {x: -0.029329337, y: 1.0721638e-11, z: -5.12734e-12}
       rotation: {x: 0.021444088, y: 0.0012727027, z: -0.038876213, w: 0.9990131}
       scale: {x: 1, y: 1, z: 1}
+    - name: weapon_l
+      parentName: hand_l
+      position: {x: -0.06706486, y: 0.02999401, z: 0.009469279}
+      rotation: {x: 0.54855716, y: 0.5017045, z: 0.32023492, w: 0.5872199}
+      scale: {x: 1, y: 1, z: 1}
+    - name: shield
+      parentName: weapon_l
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.9987632, y: -2.6916786e-18, z: 0.049719807, w: 6.113904e-17}
+      scale: {x: 1, y: 1, z: 1}
     - name: lowerarm_twist_01_l
       parentName: lowerarm_l
       position: {x: -0.14, y: 3.5527136e-17, z: 1.4210854e-16}
       rotation: {x: 5.551115e-17, y: -2.7755576e-17, z: 1.540744e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperarm_twist_01_l
+      parentName: upperarm_l
+      position: {x: -0.005, y: -3.5527136e-17, z: 0}
+      rotation: {x: -1.5959456e-16, y: 8.326673e-17, z: -5.551115e-17, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: clavicle_r
       parentName: spine_03
@@ -738,11 +675,6 @@ ModelImporter:
       position: {x: 0.17203511, y: -0.00000016230251, z: -0.00000654036}
       rotation: {x: 0.07128115, y: 0.08479366, z: 0.12552129, w: 0.98588717}
       scale: {x: 1, y: 1, z: 1}
-    - name: upperarm_twist_01_r
-      parentName: upperarm_r
-      position: {x: 0.0050012157, y: 0.00000019229161, z: 0.000001143636}
-      rotation: {x: -1.5959456e-16, y: 8.326673e-17, z: -5.551115e-17, w: 1}
-      scale: {x: 1, y: 1, z: 1}
     - name: lowerarm_r
       parentName: upperarm_r
       position: {x: 0.3001403, y: 0.00000050340896, z: 0.000003090027}
@@ -753,16 +685,6 @@ ModelImporter:
       position: {x: 0.28421816, y: 0.0000005299425, z: -0.0000010344394}
       rotation: {x: -0.60435134, y: 0.05645873, z: 0.048055787, w: 0.79326075}
       scale: {x: 1, y: 1, z: 1}
-    - name: weapon_r
-      parentName: hand_r
-      position: {x: 0.06706501, y: -0.029994557, z: -0.009469181}
-      rotation: {x: 0.54855716, y: 0.5017045, z: 0.32023492, w: 0.5872199}
-      scale: {x: 1, y: 1, z: 1}
-    - name: sword
-      parentName: weapon_r
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
     - name: index_01_r
       parentName: hand_r
       position: {x: 0.09410321, y: -0.015744077, z: 0.01580303}
@@ -771,7 +693,7 @@ ModelImporter:
     - name: index_02_r
       parentName: index_01_r
       position: {x: 0.043366425, y: -0.0000031032282, z: -0.0000007459466}
-      rotation: {x: 0.0054228837, y: 0.0024927312, z: -0.03427541, w: 0.9993946}
+      rotation: {x: 0.0054228837, y: 0.0024927314, z: -0.03427541, w: 0.99939466}
       scale: {x: 1, y: 1, z: 1}
     - name: index_03_r
       parentName: index_02_r
@@ -826,7 +748,7 @@ ModelImporter:
     - name: thumb_01_r
       parentName: hand_r
       position: {x: 0.028191993, y: -0.00874435, z: 0.023263678}
-      rotation: {x: 0.5940663, y: -0.27803776, z: 0.19571032, w: 0.7290251}
+      rotation: {x: 0.5940663, y: -0.2780378, z: 0.1957103, w: 0.7290252}
       scale: {x: 1, y: 1, z: 1}
     - name: thumb_02_r
       parentName: thumb_01_r
@@ -838,10 +760,40 @@ ModelImporter:
       position: {x: 0.029331643, y: -0.00000046523945, z: 0.0000016350168}
       rotation: {x: 0.021444088, y: 0.0012727027, z: -0.038876213, w: 0.9990131}
       scale: {x: 1, y: 1, z: 1}
+    - name: weapon_r
+      parentName: hand_r
+      position: {x: 0.06706501, y: -0.029994557, z: -0.009469181}
+      rotation: {x: 0.54855716, y: 0.5017045, z: 0.32023492, w: 0.5872199}
+      scale: {x: 1, y: 1, z: 1}
+    - name: sword
+      parentName: weapon_r
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: lowerarm_twist_01_r
       parentName: lowerarm_r
       position: {x: 0.13999754, y: 0.0000012290185, z: -0.0000027922092}
       rotation: {x: 5.551115e-17, y: -2.7755576e-17, z: 1.540744e-33, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperarm_twist_01_r
+      parentName: upperarm_r
+      position: {x: 0.0050012157, y: 0.00000019229161, z: 0.000001143636}
+      rotation: {x: -1.5959456e-16, y: 8.326673e-17, z: -5.551115e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: neck_01
+      parentName: spine_03
+      position: {x: -0.16558783, y: -0.0035531756, z: -5.9659744e-10}
+      rotation: {x: 3.5627486e-17, y: -1.2767832e-16, z: 0.20371053, w: 0.97903115}
+      scale: {x: 1, y: 1, z: 1}
+    - name: head
+      parentName: neck_01
+      position: {x: -0.09283613, y: 0.0036415686, z: 4.781569e-18}
+      rotation: {x: 2.6144228e-17, y: -1.2653212e-16, z: -0.1335421, w: 0.99104315}
+      scale: {x: 1, y: 1, z: 1}
+    - name: jaw
+      parentName: head
+      position: {x: -0.01665851, y: -0.018075801, z: 5.6500484e-19}
+      rotation: {x: 4.2807424e-17, y: -1.2190744e-16, z: 5.2185436e-33, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: thigh_l
       parentName: pelvis
@@ -903,6 +855,61 @@ ModelImporter:
       position: {x: -0.22094247, y: 0.000000035809055, z: 0.0000004132582}
       rotation: {x: -0.047443595, y: -0.000021476406, z: 0.00049110875, w: 0.99887383}
       scale: {x: 1, y: 1, z: 1}
+    - name: SkeletonWarrior
+      parentName: SkeletonWarriorUnity(Clone)
+      position: {x: -0, y: 0.91106397, z: 0.020485446}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SWArmL
+      parentName: SkeletonWarrior
+      position: {x: -0, y: 0.2017383, z: -0.91106397}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SWArmR
+      parentName: SkeletonWarrior
+      position: {x: -0, y: 0.2017383, z: -0.91106397}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SWChest
+      parentName: SkeletonWarrior
+      position: {x: -0, y: 0.2017383, z: -0.91106397}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SWLegL
+      parentName: SkeletonWarrior
+      position: {x: -0, y: 0.2017383, z: -0.91106397}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SWLegR
+      parentName: SkeletonWarrior
+      position: {x: -0, y: 0.2017383, z: -0.91106397}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SWPelvis
+      parentName: SkeletonWarrior
+      position: {x: -0, y: 0.2017383, z: -0.91106397}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SWSkull
+      parentName: SkeletonWarrior
+      position: {x: -0, y: 0.2017383, z: -0.91106397}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Weapon
+      parentName: SkeletonWarrior
+      position: {x: -0, y: -0.015131788, z: -0.91106397}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SWShield
+      parentName: Weapon
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SWSword
+      parentName: Weapon
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -920,6 +927,8 @@ ModelImporter:
   animationType: 3
   humanoidOversampling: 1
   avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
