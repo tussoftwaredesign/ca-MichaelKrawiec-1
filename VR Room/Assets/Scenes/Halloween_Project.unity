@@ -1511,7 +1511,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 318325378}
         m_TargetAssemblyTypeName: Opendoor, Assembly-CSharp
-        m_MethodName: moveWall
+        m_MethodName: moveDoor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3967,9 +3967,9 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1264794485}
+      - m_Target: {fileID: 318325378}
         m_TargetAssemblyTypeName: Opendoor, Assembly-CSharp
-        m_MethodName: moveWall
+        m_MethodName: moveDoor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5976,9 +5976,9 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2019680449}
+      - m_Target: {fileID: 318325378}
         m_TargetAssemblyTypeName: Opendoor, Assembly-CSharp
-        m_MethodName: moveWall
+        m_MethodName: moveDoor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
