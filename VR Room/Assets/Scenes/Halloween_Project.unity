@@ -873,6 +873,20 @@ Rigidbody:
     type: 3}
   m_PrefabInstance: {fileID: 634854378}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &68155486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68155472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3160b501df5cbb245b2ea35d82f68adc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Door: {fileID: 0}
+  rb: {fileID: 0}
 --- !u!1 &104997818 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1995273381122676, guid: a628f6f95bf927d449632f563706db95,
@@ -1509,7 +1523,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 318325378}
+      - m_Target: {fileID: 68155486}
         m_TargetAssemblyTypeName: Opendoor, Assembly-CSharp
         m_MethodName: moveDoor
         m_Mode: 1
@@ -2134,10 +2148,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 82257849827119516, guid: b5cab78b7f36c4860b4674677d76b79e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 82443586349105078, guid: b5cab78b7f36c4860b4674677d76b79e,
         type: 3}
       propertyPath: m_Volume
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 82443586349105078, guid: b5cab78b7f36c4860b4674677d76b79e,
+        type: 3}
+      propertyPath: rolloffMode
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 82443586349105078, guid: b5cab78b7f36c4860b4674677d76b79e,
         type: 3}
@@ -3967,7 +3991,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 318325378}
+      - m_Target: {fileID: 68155486}
         m_TargetAssemblyTypeName: Opendoor, Assembly-CSharp
         m_MethodName: moveDoor
         m_Mode: 1
@@ -5976,7 +6000,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 318325378}
+      - m_Target: {fileID: 68155486}
         m_TargetAssemblyTypeName: Opendoor, Assembly-CSharp
         m_MethodName: moveDoor
         m_Mode: 1
