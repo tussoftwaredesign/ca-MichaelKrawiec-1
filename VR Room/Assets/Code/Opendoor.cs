@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Opendoor : MonoBehaviour
 {
+    public GameObject Toilet;
+
     public GameObject Door;
     public Rigidbody rb;
     public Animator animator;
@@ -14,6 +16,7 @@ public class Opendoor : MonoBehaviour
     void Start()
     {
         rb = Door.GetComponent<Rigidbody>();
+        animator = GetComponent<Animator>();
     }
 
     public void check()
@@ -23,18 +26,19 @@ public class Opendoor : MonoBehaviour
             if (!myObjects[i].activeSelf)
             {
                 allInActive = true;
-                break; //this "quits" the for loop, you don't need to check the rest of the items if you already found one that's not active
+                break; //this "quits" the for loop, you don't need to check the rest of the items if you already found one that's active
             }
         }
 
         if (allInActive)
-            //GetComponent<Animator>().enabled = false;
-            moveDoor();
+        Toilet.GetComponent<Animator>().enabled = false;
+        moveDoor();
     }
 
 
     public void moveDoor()
     {
+        
         Vector3 newRotation = new Vector3(0, -85, 0);
         transform.eulerAngles = newRotation;
         Debug.Log("Opening Door!");
