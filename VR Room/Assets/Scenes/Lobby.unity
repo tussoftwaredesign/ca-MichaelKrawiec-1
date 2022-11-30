@@ -672,8 +672,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3160b501df5cbb245b2ea35d82f68adc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Toilet: {fileID: 0}
   Door: {fileID: 0}
   rb: {fileID: 0}
+  animator: {fileID: 0}
+  myObjects: []
 --- !u!1 &71564756
 GameObject:
   m_ObjectHideFlags: 0
@@ -1233,8 +1236,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3160b501df5cbb245b2ea35d82f68adc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Toilet: {fileID: 0}
   Door: {fileID: 68155472}
   rb: {fileID: 68155479}
+  animator: {fileID: 0}
+  myObjects: []
 --- !u!1 &350014922
 GameObject:
   m_ObjectHideFlags: 0
@@ -2663,7 +2669,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1077570472795818, guid: b5cab78b7f36c4860b4674677d76b79e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1569455375183356, guid: b5cab78b7f36c4860b4674677d76b79e, type: 3}
       propertyPath: m_Name
@@ -2725,6 +2731,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64814045226388720, guid: b5cab78b7f36c4860b4674677d76b79e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 82257849827119516, guid: b5cab78b7f36c4860b4674677d76b79e,
         type: 3}
       propertyPath: m_Enabled
@@ -2757,6 +2768,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 930166872881751181, guid: b5cab78b7f36c4860b4674677d76b79e, type: 3}
+    - {fileID: 64814045226388720, guid: b5cab78b7f36c4860b4674677d76b79e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b5cab78b7f36c4860b4674677d76b79e, type: 3}
 --- !u!1 &642923492
 GameObject:
@@ -4855,8 +4867,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3160b501df5cbb245b2ea35d82f68adc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Toilet: {fileID: 0}
   Door: {fileID: 68155472}
   rb: {fileID: 68155479}
+  animator: {fileID: 0}
+  myObjects: []
 --- !u!1 &1271492726
 GameObject:
   m_ObjectHideFlags: 0
@@ -6116,7 +6131,7 @@ PrefabInstance:
     - target: {fileID: 6598815579406187037, guid: 9f5a24a380916d14db9775daab4fe333,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187037, guid: 9f5a24a380916d14db9775daab4fe333,
         type: 3}
@@ -7866,8 +7881,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3160b501df5cbb245b2ea35d82f68adc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Toilet: {fileID: 0}
   Door: {fileID: 68155472}
   rb: {fileID: 68155479}
+  animator: {fileID: 0}
+  myObjects: []
 --- !u!1 &2036603367
 GameObject:
   m_ObjectHideFlags: 0

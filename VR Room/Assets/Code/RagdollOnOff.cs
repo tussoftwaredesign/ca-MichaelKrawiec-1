@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class RagdollOnOff : MonoBehaviour
 {
@@ -9,16 +10,16 @@ public class RagdollOnOff : MonoBehaviour
     public Animator animator;
     public Rigidbody rb;
 
+    public EnemyFollow Follow;
+    public NavMeshAgent NavMA;
+    public AudioSource Audio;
+
     void Start()
     {
         GetRagdollBits();
         ragdollOff();
     }
 
-    void Update()
-    {
-        
-    }
 
     void OnCollisionEnter(Collision collision)
     {
@@ -40,6 +41,9 @@ public class RagdollOnOff : MonoBehaviour
     void ragdollOn()
     {
         animator.enabled = false;
+        Follow.enabled = false;
+        NavMA.enabled = false;
+        Audio.enabled = false;
 
         foreach (Collider col in ragdollColliders)
         {
@@ -67,6 +71,9 @@ public class RagdollOnOff : MonoBehaviour
             rigid.isKinematic = true;
         }
 
+        Follow.enabled = true;
+        Audio.enabled = true;
+        NavMA.enabled = true;
         animator.enabled = true;
         mainCollider.enabled = true;
         rb.isKinematic = false;
